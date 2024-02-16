@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+}
+@media screen and (max-width: 600px) {
+	body {
+		background-color: red;
+	}
+}
+.main {
+	display: flex;
+}
+
+.header {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding-left: 10px;
+	border-bottom: 1px solid black;
+}
+.header__logo {
+	margin-left: 5px;
+	font-size: 24px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	color: white;
+}
+
+.header__button {
+	background-color: white;
+	border: none;
+	font-size: 17px;
+}
+.aside {
+	height: 500px;
+	margin: 5px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	row-gap: 20px;
+	padding: 20px;
+	width: 300px;
+	height: 700px;
+	border: 1px solid black;
+}
+
+.aside_geners--list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 5px;
+	overflow-y: scroll;
+}
+.aside_geners--list::-webkit-scrollbar {
+	width: 10px;
+	background-color: #f9f9fd;
+}
+
+.aside_geners--list::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: hsl(180, 3%, 18%);
+}
+
+.aside_geners--list::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	background-color: #f9f9fd;
+}
+
+.aside_geners--gener {
+	display: flex;
+	align-items: center;
+}
+.aside_geners--check {
+	height: 20px;
+}
+.aside_pages {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-column-gap: 5px;
+	-moz-column-gap: 5px;
+	column-gap: 5px;
+	margin-top: auto;
+}
+.aside_selectName {
+	margin: 5px;
+}
+.aside_film-filter {
+	width: 300px;
+	height: 25px;
+	border: none;
+	border-bottom: 1px solid black;
+}
+
+.subtitle {
+	margin: 0px;
+	margin-top: 10px;
+}
+
+.aside_clear_button {
+	padding: 10px 30px;
+	margin: 10px 20px;
+	border: 2px solid #000000;
+	border-radius: 8px;
+	font-family: 'Montserrat', sans-serif;
+	color: #000000;
+	transition: 0.2s ease-in-out;
+}
+
+.aside_clear_button:hover {
+	background: #000000;
+	color: #fff;
+}
